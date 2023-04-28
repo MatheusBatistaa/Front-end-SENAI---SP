@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> 
+
+    <Style>
+    
+    *{ 
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+
+    }
+body {
+    background-color: royalblue;
+}
+
+ form {
+     margin: 0 auto; /*centralizou o formulario*/
+     margin-top: 40px;
+     padding:60px 40px; /*em cima embaixo e lateral - obs: vai até 5 valores*/
+     width: 45%;
+     background-color: #85888a;
+     border: 3px solid #85888a;
+     box-shadow: 1px 1px 10px rgb(0, 0, 0, 0.4); /*Sombra da borda da caixa*/
+     transition: box-shadow 0.4s;
+
+    }
+
+form:hover {
+
+    box-shadow: 5px 5px 5px black;
+
+}
+
+
+    .linha{
+        margin-bottom: 10px; /*distancia entre as linhas*/ 
+        padding: 10px; /* espaço dentro das bordas*/
+        background-color: #aab7c0;    
+    }
+
+    .linha input {
+            
+            width: 95%;
+            height: 30px;
+            background-color: transparent;
+            border: none;
+            padding-left: 5px; 
+            color: #85888a  ; 
+    }
+    
+    .linha ::placeholder {
+
+        color: brown;
+    }
+  
+    .linha input:focus {
+
+        background-color: green;
+
+        color: gold;
+
+    }
+    
+    .linha input :focus ::placeholder {
+
+        color: white;
+    }
+
+
+    .linha i {
+
+        margin-left: 1%;          
+        color: aqua;
+    }
+
+    button {
+        display: block;
+        width: 200px;
+        height: 30px;
+        margin-left: auto; /*Tem que ser block para aceitar as margens laterais automaticas*/
+        margin-right: auto; /*Tem que ser block para aceitar as margens laterais automaticas*/
+        background-color: blueviolet;
+        border: 1px solid black;
+        color: white;
+        text-transform: uppercase /*coloca para letra maiuscula*/
+    }
+
+    a {
+        display: block;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        
+        font-size: small;
+
+
+    }
+
+    </Style>
+
+</head>
+<body>
+    <form action="">
+         
+        <div class="linha">
+              <input type="text" id="usename" placeholder="Username"> <!--placeholder é o nome trasnparente na célula-->
+              <i class="fas fa-user"></i> <!--icone--->
+        </div>
+
+        <div class="linha">
+            <input type="password" id="password" placeholder="******">
+            <i class="fas fa-lock"></i> <!--icone-->
+      </div>
+
+      <button type="submit"> Login </button>
+
+      <br><br>
+
+      <a href="">Esqueci a senha</a>
+      
+
+    </form>
+
+    
+    
+</body>
+</html>

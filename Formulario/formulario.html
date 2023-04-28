@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Cadastro de cliente</h1>
+
+    <form action="https://www.google.com.br/  " method="POST">  <!--Destino-->
+
+        <fieldset>  <!--Caixa dados pessoais-->
+            <legend> Dados Pessoais</legend>
+
+        <label for="">Nome</label>
+        <input type="text" name= "nome">
+        <br><br>
+        <label for="">Idade</label>
+        <input type="number" name="Idade">
+        <br><br>
+        <label for="">E-mail</label>
+        <input type="email" name="email" required> <!--"required" é o campo de obrigação para validar-->
+      <br>
+     
+     <br>
+        <label for="">Gostos / Hobbies</label>
+         <select name="hobbies" id="hobbies">
+
+              <option value="selecione">selecione</option>
+
+                <optgroup label="filmes"></optgroup> 
+                   <option value="rei-leao">O rei leão</option>
+                   <option value="Velozes-e-furiosos"> Velozes e furiosos</option>
+
+              <option value="novelas">Novelas</option>
+
+              <optgroup label="séries"></optgroup>
+                 <option value="Ponto cego">Ponto cego</option>
+                 <option value="Lista negra">Lista negra</option>
+
+              <option value="musicas">Musicas</option>
+
+         </select>  
+         
+     <br><br>
+    
+     <label for=""> Sexo</label>
+         <input  type="radio" name="sexo" value="masc"> Masculino
+         <input type="radio" value="fem" name="sexo"> Feminino
+         <input type="radio" value="outro" name="sexo"> Não informado  
+    
+     <br><br>
+     <label for="">Sucos</label>
+          <input type="checkbox" name="suco[]" value="amora"> Amora
+          <input type="checkbox" name="suco[]" value="abacate"> Abacate
+          <input type="checkbox" name="suco[]" value="manga"> Manga
+
+     <br><br>
+     <button> Enviar</button>
+     <br>
+         
+      </fieldset>
+    </form>
+    
+</body>
+</html>
