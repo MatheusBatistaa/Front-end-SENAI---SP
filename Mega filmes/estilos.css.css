@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #292828;
+    color: white;
+    font-family: Verdana, sans-serif;
+}
+
+#cabecalho {
+    display: flex;
+    /*justify-content: space-between;*/
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 10px;
+    padding-top: 10px;
+
+    background-color: black;
+}
+
+#cabecalho h1 {
+    cursor: pointer;
+    text-transform: uppercase;
+    padding: 5px;
+    border-radius:5px;
+    font-size: 24px;
+    background-color: #292828;
+    color: red;
+    border: 1px solid #292828;
+}
+
+#cabecalho nav {
+    display: flex;
+    width: 60%;
+    margin-left: 10px;
+    /*border: 1px solid white;*/
+
+}
+
+#cabecalho nav a {
+    padding: 15px;
+    color: white;
+    font-size: 13px;
+}
+#cabecalho nav a:hover {
+    color: firebrick;
+}
+
+#cabecalho form {
+    display: flex;
+    align-items: center;
+} 
+
+#cabecalho form input,
+#cabecalho form button
+ {
+    height: 20px;
+    background-color: transparent;
+    color: white;
+    border: none;
+}
+
+#cabecalho form input {
+    padding: 10px;
+    background-color: gray;
+    color: white;
+    border-radius: 3px;
+    margin-right: 5px;
+}
+
+#cabecalho form input::placeholder {
+    color: white;
+}
+
+#corpo {
+    margin-top: 20px;
+    border: 1px solid red;
+}
+
+#rodape {
+    padding: 20px;
+    border: 5px dashed purple;
+    margin-top: 21px;
+}
